@@ -1,63 +1,108 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    
-  </head>
-  
-  <body style="background-color:silver">
-      <header>  
-        <title>Geumtae's homepage</title>
-          <style>
-            img{
-              width:10%;
-              height:10%;
-              border:1px solid black; <!--이건 이미지의 테두리를 설정해주는 border-->
-            }
-          </style>
-          
-          <img src="./kkt.jpg" alt="이 글씨가 보인다면 제 사진이 원래 있어야 할 자리이므로 그냥 본걸로 칩시다.">
-        </div>
-        
-        
-    <h2>About me</h2>
-    <p>    Integrated course in Seoul National University    </p>
-    <p>    B.S. Pohang university of science and technology    </p>
-        
-        <br><br>
-        
-        <hr>
-        
-    <h2>Research Topics</h2>
-    <ol>
-      <li>Post-Quantum Cryptography</li>
-        <p>    As quantum computing technology grows fast, need for safe crytographic system is increasing dramatically.</p>
-      <li>Homomorphic Encryption</li>
-        <p>    Homomorphic encryption is the most powerful tool for dealing with 4th generation security problems. 
-          It enables theoretic secure computation through getting rid of the decryption key exchange step.</p>
-      <li>GPU acceleration of homomorphic libraries</li>
-        <p>    Full RNS HEAAN is homomorphic encryption library created by professor Cheon and his team.
-      SEAL(Simple Encrypted Arithmetic Library) was created by Microsoft. It offers BFV/CKKS scheme.</p> 
-      
-        <br><br>
-        
-        <hr>
-        <!--
-    <a href="/https://ccl.snu.ac.kr" target="_top">
-   <h2>CCL homepage</h2>
-        </a>
-    
-        <hr>
-      
- <h2>Education</h2>
-    
-    <hr>
-    
-    <h2>Publication</h2>
-      <p>    Not yet............. T_T</p>
-      
-      -->
-      
-  </body>
-  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Geumtae's Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid #444;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-top: 40px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="./kkt.jpg" alt="이 글씨가 보인다면 제 사진이 원래 있어야 할 자리이므로 그냥 본걸로 칩시다.">
+      <h1>Geumtae's Homepage</h1>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>Integrated course student at Seoul National University</p>
+      <p>B.S. in Computer Science, POSTECH (Pohang University of Science and Technology)</p>
+    </section>
+
+    <section>
+      <h2>Research Topics</h2>
+      <ol>
+        <li>
+          Post-Quantum Cryptography  
+          <p>As quantum computing evolves, demand for secure cryptographic systems is rapidly increasing.</p>
+        </li>
+        <li>
+          Homomorphic Encryption  
+          <p>Homomorphic encryption enables secure computation without sharing decryption keys, making it a key player in next-gen privacy.</p>
+        </li>
+        <li>
+          GPU Acceleration of Homomorphic Libraries  
+          <p>HEAAN (by Prof. Cheon) and Microsoft SEAL offer high-performance homomorphic encryption with RNS and CKKS schemes.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Future sections like Education, Publications, and Lab Homepage can be added here -->
+
+    <footer>
+      &copy; 2025 Geumtae. All rights reserved.
+    </footer>
+  </div>
+</body>
 </html>
